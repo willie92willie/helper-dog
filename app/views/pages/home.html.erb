@@ -1,5 +1,25 @@
+
+<style>
+.fondo{
+border :solid 5px black;
+width:400px;
+background:green;
+border-radius:20px;
+height:600px;
+
+}
+.imagen{
+
+margin:auto;
+
+}
+
+</style>
+
+
+<div class="fondo">
 <h1>Bienvenidos a Home</h1>
-<%=image_tag "home.jpg" %>
+<%=image_tag "dogs.jpeg",width:"200px" ,class:"imagen"%>
 <%=link_to "About","/about", target:"#"    %>
 <%=link_to "team","/team", target:"#"    %>
-
+</div>

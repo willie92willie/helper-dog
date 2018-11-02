@@ -2,6 +2,8 @@
 
 <ul> 
 <% @dogs.each do |dog| %>
-  <li><a href="dogs/<%=dog.id%>"><%=dog.name%> </a></li>
+
+  <li><%= link_to dog.name, "dogs/#{dog.id}" %></li>
 <% end %>
 </ul>
+
